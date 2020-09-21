@@ -7,13 +7,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DemoApp</name>
 
-	<repositories>
-		<repository>
-			<id>dbrepo</id>
-			<url>https://dbip:dbport</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
@@ -24,6 +17,12 @@
 		</dependency>
 
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>test</id>
+			<url>http://localhost:8081/repository/vinsyshosted/</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
