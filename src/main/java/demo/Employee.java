@@ -5,6 +5,7 @@ public class Employee {
 	private Long id;
 	private String name;
 	private String departmentName;
+	private String password;
 
 	public String getDepartmentName() {
 		return departmentName;
@@ -28,5 +29,13 @@ public class Employee {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }
